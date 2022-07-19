@@ -758,6 +758,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -773,6 +778,10 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.img{
+  background-position:1rem 3rem;
 }
 
 .roadmap{
@@ -845,10 +854,6 @@ video {
     margin-top: 4rem;
   }
 
-  .lg\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -865,8 +870,8 @@ video {
     height: 100vh;
   }
 
-  .lg\:h-full {
-    height: 100%;
+  .lg\:h-4\/5 {
+    height: 80%;
   }
 
   .lg\:h-10 {
@@ -875,10 +880,6 @@ video {
 
   .lg\:h-7 {
     height: 1.75rem;
-  }
-
-  .lg\:h-4\/5 {
-    height: 80%;
   }
 
   .lg\:w-full {
@@ -1005,17 +1006,13 @@ video {
     background-size: cover;
   }
 
-  .lg\:bg-center {
-    background-position: center;
-  }
-
   .lg\:bg-no-repeat {
     background-repeat: no-repeat;
   }
 
-  .lg\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .lg\:pt-3 {
