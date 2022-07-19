@@ -582,12 +582,8 @@ video {
   margin-top: 11rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .flex {
@@ -674,6 +670,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -713,6 +713,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -727,6 +732,14 @@ video {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-sm {
@@ -767,21 +780,6 @@ video {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.placeholder-gray-200::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-200:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-200::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-placeholder-opacity));
-}
-
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -795,21 +793,6 @@ video {
 .placeholder-gray-400::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-300::-moz-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-300:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-placeholder-opacity));
-}
-
-.placeholder-gray-300::placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-placeholder-opacity));
 }
 
 .outline-none {
@@ -830,7 +813,7 @@ video {
 }
 
 .img {
-  background-position: 1rem 1rem;
+  background-position: 3vw 0;
 }
 
 input::-moz-placeholder {
@@ -859,24 +842,12 @@ input::placeholder {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
   .lg\:relative {
     position: relative;
   }
 
-  .lg\:top-2\/4 {
-    top: 50%;
-  }
-
-  .lg\:right-\[0\.5px\] {
-    right: 0.5px;
-  }
-
-  .lg\:col-span-3 {
-    grid-column: span 3 / span 3;
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
   }
 
   .lg\:col-span-4 {
@@ -911,8 +882,8 @@ input::placeholder {
     grid-row-start: 5;
   }
 
-  .lg\:mt-16 {
-    margin-top: 4rem;
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:mt-1 {
@@ -921,6 +892,10 @@ input::placeholder {
 
   .lg\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .lg\:mt-36 {
+    margin-top: 9rem;
   }
 
   .lg\:block {
@@ -939,8 +914,8 @@ input::placeholder {
     height: 100vh;
   }
 
-  .lg\:h-4\/5 {
-    height: 80%;
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:h-10 {
@@ -955,21 +930,12 @@ input::placeholder {
     width: 100%;
   }
 
-  .lg\:w-2\/5 {
-    width: 40%;
-  }
-
-  .lg\:-translate-y-2\/4 {
-    --tw-translate-y: -50%;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .lg\:cursor-pointer {
     cursor: pointer;
   }
 
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  .lg\:grid-cols-\[2fr_1fr\] {
+    grid-template-columns: 2fr 1fr;
   }
 
   .lg\:grid-cols-4 {
@@ -1004,20 +970,20 @@ input::placeholder {
     justify-content: space-between;
   }
 
-  .lg\:gap-12 {
-    gap: 3rem;
+  .lg\:justify-around {
+    justify-content: space-around;
   }
 
   .lg\:gap-2 {
     gap: 0.5rem;
   }
 
-  .lg\:gap-3 {
-    gap: 0.75rem;
-  }
-
   .lg\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .lg\:gap-3 {
+    gap: 0.75rem;
   }
 
   .lg\:self-start {
@@ -1075,9 +1041,19 @@ input::placeholder {
     background-repeat: no-repeat;
   }
 
-  .lg\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:pt-3 {

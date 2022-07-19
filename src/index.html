@@ -14,38 +14,38 @@
 </head>
 
 <body class=".antialiased">
-<main class="grid grid-cols-3 grid-rows-3 h-full lg:w-full lg:grid lg:grid-cols-5 lg:grid-rows-1">
-	<div class="img hidden lg:img lg:col-start-1 lg:col-span-3 lg:block lg:h-screen lg:bg-blue-50 lg:bg-[url(../src/assets/login-roadmap.svg)]  lg:bg-no-repeat lg:bg-cover"></div>
-	<div class="login mt-44 px-6 col-start-1 col-span-3 w-full flex flex-col justify-start items-start gap-10 h-full lg:px-24 lg:mt-16 lg:absolute lg:top-2/4 lg:-translate-y-2/4 lg:right-[0.5px] lg:w-2/5 lg:h-4/5 lg:flex lg:flex-col lg:gap-12 lg:justify-between lg:items-start lg:shadow-sm lg:bg-white">
+<main class="grid grid-cols-3 grid-rows-3 h-full lg:w-full lg:grid lg:grid-cols-[2fr_1fr] lg:grid-rows-1">
+	<div class="img hidden lg:img lg:col-start-1 lg:col-span-1 lg:block lg:h-screen lg:bg-blue-50 lg:bg-[url(../src/assets/login-roadmap.svg)] lg:bg-no-repeat lg:bg-cover"></div>
+	<div class="login mt-44 px-6 col-start-1 col-span-3 w-full flex flex-col justify-start items-start gap-10 h-full lg:mt-0 lg:px-20 lg:col-start-2 lg:col-span-1 lg:w-full lg:h-full lg:flex lg:flex-col lg:justify-around lg:items-start lg:shadow-sm lg:bg-white">
 		<div class="login__wrapper w-full flex flex-col justify-start items-start gap-10">
-			<p class="login__welcome text-sm self-start font-light text-gray-500 lg:self-start lg:font-light lg:text-gray-500 mb-8">
+			<p class="login__welcome text-sm self-start font-light text-gray-500 lg:self-start lg:font-light lg:text-gray-500 mb-6">
 				Welcome to Oracles trading Journal 👋🏼</p>
 			<h1 class="font-medium text-md lg:col-start-2 lg:col-span-4  lg:justify-self-start">
 			Login to your account</h1>
 			<div class="login__credentials flex flex-col gap-5 justify-center items-start w-full">
 				<div class="login__email w-full flex flex-col gap-1 lg:flex lg:flex-col lg:col-start-2 lg:col-span-5 lg:row-start-3 lg:justify-center lg:self-start lg:gap-2 lg:w-full">
-					<p class="text-sm lg:text-sm">Email</p>
-					<input type="text" placeholder="Please enter your email" class="p-1 text-sm pt-3 pb-3 pl-1 placeholder-gray-400  rounded-md border-none outline-none lg:text-sm lg:col-start-2 lg:w-full lg:row-start-3 lg:self-end lg:col-span-5 lg:pt-3 lg:pb-3 lg:pl-4 bg-blue-50 lg:justify-self-center lg:border-none lg:outline-none lg:rounded-md">
+					<p class="text-xs font-medium">Email</p>
+					<input type="text" placeholder="Please enter your email" class="p-1 text-sm pt-3 pb-3 pl-1 placeholder-gray-400  rounded-md border-none outline-none lg:text-sm lg:col-start-2 lg:w-full lg:row-start-3 lg:self-end lg:col-span-5 lg:py-3 lg:pl-4 bg-blue-50 lg:justify-self-center lg:border-none lg:outline-none lg:rounded-md">
 				</div>
 			<div class="login__password flex flex-col gap-2 w-full col-start-1 col-span-4 row-start-3 row-span-1 self-start border-none outline-none lg:w-full lg:flex lg:flex-col lg:gap-2 lg:rounded-md">
-				<p class=" w-full text-sm lg:text-md">Password</p>
+				<p class=" w-full text-xs font-medium">Password</p>
 				<div class="flex flex-row rounded-md w-full justify-between items-center bg-blue-50 pr-2 lg:flex lg:flex-row lg:justify-between lg:w-full lg:items-center lg:pr-2">
-					<input type="password" placeholder="Enter password" class="password placeholder-gray-400 w-full border-none outline-none pt-3 pb-3 pl-1 text-sm bg-blue-50 rounded-md lg:text-sm lg:pt-2 lg:pb-2 lg:pl-4 lg:relative lg:border-none lg:outline-none lg:w-full lg:rounded-md">
+					<input type="password" placeholder="Enter password" class="password placeholder-gray-400 w-full border-none outline-none pt-4 pb-4 pl-1 text-sm bg-blue-50 rounded-md lg:text-sm lg:py-3 lg:pl-4 lg:relative lg:border-none lg:outline-none lg:w-full lg:rounded-md">
 					<i class="eye fa-solid fa-eye text-gray-500 cursor-pointer lg:cursor-pointer"></i>
 				</div>
 				<div class="flex flex-row justify-between w-full lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:w-full lg:mt-1">
-					<label class="login__remember flex flex-row items-center gap-1 lg:flex lg:flex-row lg:items-center lg:col-span-2 lg:gap-1 lg:cursor-pointer">
+					<label class="login__remember flex flex-row items-center gap-1 lg:flex lg:flex-row lg:items-center lg:col-span-2 lg:gap-2 lg:cursor-pointer">
 						<input type="checkbox">
 						<p class="text-xs font-light lg:text-xs lg:font-light">Remember Password</p>
 					</label>
 					<a href="#" class="text-xs font-light text-blue-600 lg:text-xs lg:font-light lg:col-start-3 lg:col-span-2 lg:justify-self-end lg:text-blue-600">Forget Password?</a>
 				</div>
 			</div>
-			<button class="text-sm w-full text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-200 col-start-1 col-span-4 row-start-3 self-end h-10 mb-5 lg:text-sm lg:text-white lg:bg-blue-600 lg:w-full lg:h-10 lg:rounded-md lg:hover:bg-blue-700 lg:transition-colors lg:duration-200 lg:col-start-2 lg:row-start-5 lg:col-span-5 lg:self-start lg:mt-3"> Login
+			<button class="text-sm w-full text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-200 col-start-1 col-span-4 row-start-3 self-end h-10 lg:text-sm lg:text-white lg:bg-blue-600 lg:w-full lg:h-10 lg:rounded-md lg:hover:bg-blue-700 lg:transition-colors lg:duration-200 lg:col-start-2 lg:row-start-5 lg:col-span-5 lg:self-start lg:mt-3"> Login
 			</button>
 			</div>
 		</div>
-		<div class="flex flex-row justify-center gap-1 text-xs h-5 w-full lg:flex lg:flex-row lg:text-xs lg:justify-self-end lg:w-full lg:self-end lg:gap-1 lg:h-7">
+		<div class="flex flex-row justify-center gap-1 text-xs h-5 w-full lg:mt-36 lg:flex lg:flex-row lg:text-xs lg:justify-self-end lg:w-full lg:self-end lg:gap-1 lg:h-7">
 			<p class="justify-self-center lg:justify-self-center">Don't have account?</p>
 			<a class="text-blue-600 justify-self-center lg:text-blue-600 lg:justify-self-center" href="#">Sign up</a>
 		</div>
