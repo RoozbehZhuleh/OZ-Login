@@ -1,16 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.img{
-background-position:1rem 1rem;
+.img {
+  background-position: 1rem 1rem;
 }
 
- .roadmap{
-    background-image: url(../src/assets/login-roadmap.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+.roadmap {
+  background-image: url(../src/assets/login-roadmap.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
