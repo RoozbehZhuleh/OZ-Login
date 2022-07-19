@@ -938,6 +938,18 @@ video {
     height: 1.75rem;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-5 {
+    height: 1.25rem;
+  }
+
+  .lg\:h-52 {
+    height: 13rem;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
